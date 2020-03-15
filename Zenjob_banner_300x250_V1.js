@@ -4,7 +4,7 @@ var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
 		{name:"Zenjob_banner_300x250_V1_atlas_", frames: [[0,0,2000,1500],[0,1502,1292,462]]},
-		{name:"Zenjob_banner_300x250_V1_atlas_2", frames: [[0,0,605,606],[607,0,605,606],[362,651,504,41],[869,608,334,48],[362,694,504,41],[868,658,323,48],[362,608,505,41],[1214,0,616,516],[0,608,360,120],[1214,518,465,180],[1681,518,300,250]]}
+		{name:"Zenjob_banner_300x250_V1_atlas_2", frames: [[0,0,605,606],[607,0,605,606],[507,860,504,41],[769,730,334,48],[507,903,504,41],[769,780,323,48],[1214,518,600,500],[1816,603,228,68],[1816,518,228,83],[0,860,505,117],[1214,0,616,516],[769,608,360,120],[0,608,465,180],[467,608,300,250]]}
 ];
 
 
@@ -54,30 +54,51 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_92 = function() {
+(lib.CachedBmp_140 = function() {
 	this.initialize(ss["Zenjob_banner_300x250_V1_atlas_2"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_105 = function() {
+(lib.CachedBmp_139 = function() {
 	this.initialize(ss["Zenjob_banner_300x250_V1_atlas_2"]);
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Download_on_the_App_Store_Badge_DE_blk_092917 = function() {
+(lib.CachedBmp_138 = function() {
 	this.initialize(ss["Zenjob_banner_300x250_V1_atlas_2"]);
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.googleplaybadge = function() {
+(lib.CachedBmp_125 = function() {
 	this.initialize(ss["Zenjob_banner_300x250_V1_atlas_2"]);
 	this.gotoAndStop(9);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.CachedBmp_124 = function() {
+	this.initialize(ss["Zenjob_banner_300x250_V1_atlas_2"]);
+	this.gotoAndStop(10);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Download_on_the_App_Store_Badge_DE_blk_092917 = function() {
+	this.initialize(ss["Zenjob_banner_300x250_V1_atlas_2"]);
+	this.gotoAndStop(11);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.googleplaybadge = function() {
+	this.initialize(ss["Zenjob_banner_300x250_V1_atlas_2"]);
+	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -89,9 +110,9 @@ lib.ssMetadata = [
 
 
 
-(lib.young_driver = function() {
+(lib.young_driver_300x250 = function() {
 	this.initialize(ss["Zenjob_banner_300x250_V1_atlas_2"]);
-	this.gotoAndStop(10);
+	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -274,24 +295,137 @@ p.nominalBounds = new cjs.Rectangle(-132.9,-11.8,263.4,24);
 p.nominalBounds = new cjs.Rectangle(-130.1,-11.8,260.6,24);
 
 
+(lib.link_to_Zenjob = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_1
+	this.instance = new lib.CachedBmp_140();
+	this.instance.setTransform(0,0,0.5,0.5);
+	this.instance._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(3).to({_off:false},0).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,300,250);
+
+
+(lib.google_play_link = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_1
+	this.instance = new lib.CachedBmp_139();
+	this.instance.setTransform(0,0,0.5,0.5);
+	this.instance._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(3).to({_off:false},0).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,114,34);
+
+
+(lib.app_store_link = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_1
+	this.instance = new lib.CachedBmp_138();
+	this.instance.setTransform(0,0,0.5,0.5);
+	this.instance._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(3).to({_off:false},0).wait(1));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,114,41.5);
+
+
 // stage content:
 (lib.Zenjob_banner_300x250_V1 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
 	// timeline functions:
-	this.frame_95 = function() {
+	this.frame_97 = function() {
+		/* Click to Go to Web Page
+		Clicking on the specified symbol instance loads the URL in a new browser window.
+		
+		Instructions:
+		1. Replace http://www.adobe.com with the desired URL address.
+		   Keep the quotation marks ("").
+		*/
+		
+		this.link_to_Zenjob.addEventListener("click", fl_ClickToGoToWebPage);
+		
+		function fl_ClickToGoToWebPage() {
+			window.open("https://www.zenjob.de/jobs", "_blank");
+		}
+		
+		/* Click to Go to Web Page
+		Clicking on the specified symbol instance loads the URL in a new browser window.
+		
+		Instructions:
+		1. Replace http://www.adobe.com with the desired URL address.
+		   Keep the quotation marks ("").
+		*/
+		
+		this.app_store_link.addEventListener("click", fl_ClickToGoToWebPage_2);
+		
+		function fl_ClickToGoToWebPage_2() {
+			window.open("https://app.adjust.com/1pvtyq", "_blank");
+		}
+		
+		/* Click to Go to Web Page
+		Clicking on the specified symbol instance loads the URL in a new browser window.
+		
+		Instructions:
+		1. Replace http://www.adobe.com with the desired URL address.
+		   Keep the quotation marks ("").
+		*/
+		
+		this.google_play_link.addEventListener("click", fl_ClickToGoToWebPage_3);
+		
+		function fl_ClickToGoToWebPage_3() {
+			window.open("https://app.adjust.com/8v9prq", "_blank");
+		}
 		this.stop()
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(95).call(this.frame_95).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).wait(97).call(this.frame_97).wait(1));
+
+	// app_store_link
+	this.app_store_link = new lib.app_store_link();
+	this.app_store_link.name = "app_store_link";
+	this.app_store_link.setTransform(57.35,229,1,1,0,0,0,57,20.7);
+	new cjs.ButtonHelper(this.app_store_link, 0, 1, 2, false, new lib.app_store_link(), 3);
+
+	this.timeline.addTween(cjs.Tween.get(this.app_store_link).wait(98));
+
+	// google_play_link
+	this.google_play_link = new lib.google_play_link();
+	this.google_play_link.name = "google_play_link";
+	this.google_play_link.setTransform(57.35,191.35,1,1,0,0,0,57,16.9);
+	new cjs.ButtonHelper(this.google_play_link, 0, 1, 2, false, new lib.google_play_link(), 3);
+
+	this.timeline.addTween(cjs.Tween.get(this.google_play_link).wait(98));
+
+	// link_to_Zenjob
+	this.link_to_Zenjob = new lib.link_to_Zenjob();
+	this.link_to_Zenjob.name = "link_to_Zenjob";
+	this.link_to_Zenjob.setTransform(150.35,124.7,1,1,0,0,0,150,125);
+	new cjs.ButtonHelper(this.link_to_Zenjob, 0, 1, 2, false, new lib.link_to_Zenjob(), 3);
+
+	this.timeline.addTween(cjs.Tween.get(this.link_to_Zenjob).wait(98));
 
 	// logo
 	this.instance = new lib.Tween16("synched",0);
-	this.instance.setTransform(-48.15,111.6);
+	this.instance.setTransform(-51.45,136.6);
 	this.instance._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(81).to({_off:false},0).to({x:68.5},13).wait(1).to({startPosition:0},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(81).to({_off:false},0).to({x:68.5},15).wait(1).to({startPosition:0},0).wait(1));
 
 	// google_play
 	this.instance_1 = new lib.Tween14("synched",0);
@@ -301,8 +435,8 @@ p.nominalBounds = new cjs.Rectangle(-130.1,-11.8,260.6,24);
 	this.instance_2 = new lib.Tween15("synched",0);
 	this.instance_2.setTransform(61.4,192.35);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_1}]},81).to({state:[{t:this.instance_2}]},13).wait(2));
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(81).to({_off:false},0).to({_off:true,x:61.4},13).wait(2));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_1}]},81).to({state:[{t:this.instance_2}]},15).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(81).to({_off:false},0).to({_off:true,x:61.4},15).wait(2));
 
 	// app_store
 	this.instance_3 = new lib.Tween12("synched",0);
@@ -312,25 +446,25 @@ p.nominalBounds = new cjs.Rectangle(-130.1,-11.8,260.6,24);
 	this.instance_4 = new lib.Tween13("synched",0);
 	this.instance_4.setTransform(61.85,219.3);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_3}]},81).to({state:[{t:this.instance_4}]},13).wait(2));
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(81).to({_off:false},0).to({_off:true,x:61.85},13).wait(2));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_3}]},81).to({state:[{t:this.instance_4}]},15).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(81).to({_off:false},0).to({_off:true,x:61.85},15).wait(2));
 
 	// phone
 	this.instance_5 = new lib.Tween10("synched",0);
-	this.instance_5.setTransform(384.75,152.3);
+	this.instance_5.setTransform(384.65,152,0.9145,0.9141);
 	this.instance_5._off = true;
 
 	this.instance_6 = new lib.Tween11("synched",0);
-	this.instance_6.setTransform(208.7,150.5);
+	this.instance_6.setTransform(208.7,160.3,0.9145,0.9141);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_5}]},81).to({state:[{t:this.instance_6}]},13).wait(2));
-	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(81).to({_off:false},0).to({_off:true,x:208.7,y:150.5},13).wait(2));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_5}]},81).to({state:[{t:this.instance_6}]},15).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(81).to({_off:false},0).to({_off:true,x:208.7,y:160.3},15).wait(2));
 
 	// purple_frame
-	this.instance_7 = new lib.CachedBmp_105();
+	this.instance_7 = new lib.CachedBmp_124();
 	this.instance_7.setTransform(-3.65,-4.3,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(96));
+	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(98));
 
 	// white_rectangle
 	this.instance_8 = new lib.Tween8("synched",0);
@@ -340,36 +474,36 @@ p.nominalBounds = new cjs.Rectangle(-130.1,-11.8,260.6,24);
 	this.instance_9 = new lib.Tween9("synched",0);
 	this.instance_9.setTransform(274.4,206.8);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_8}]},71).to({state:[{t:this.instance_9}]},11).wait(14));
-	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(71).to({_off:false},0).to({_off:true,x:274.4,y:206.8},11).wait(14));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_8}]},71).to({state:[{t:this.instance_9}]},11).wait(16));
+	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(71).to({_off:false},0).to({_off:true,x:274.4,y:206.8},11).wait(16));
 
 	// subtitle
 	this.instance_10 = new lib.Tween6("synched",0);
-	this.instance_10.setTransform(431,66.35,0.9218,0.92,0,0,0,0,0.1);
+	this.instance_10.setTransform(431,87.35,0.9218,0.92,0,0,0,0,0.1);
 	this.instance_10._off = true;
 
 	this.instance_11 = new lib.Tween7("synched",0);
-	this.instance_11.setTransform(149.9,67.1,0.9194,0.9179);
+	this.instance_11.setTransform(149.9,90.1,0.9194,0.9179);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_10}]},33).to({state:[{t:this.instance_11}]},19).wait(44));
-	this.timeline.addTween(cjs.Tween.get(this.instance_10).wait(33).to({_off:false},0).to({_off:true,regY:0,scaleX:0.9194,scaleY:0.9179,x:149.9,y:67.1},19).wait(44));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_10}]},33).to({state:[{t:this.instance_11}]},19).wait(46));
+	this.timeline.addTween(cjs.Tween.get(this.instance_10).wait(33).to({_off:false},0).to({_off:true,regY:0,scaleX:0.9194,scaleY:0.9179,x:149.9,y:90.1},19).wait(46));
 
 	// title
-	this.instance_12 = new lib.CachedBmp_92();
-	this.instance_12.setTransform(27.65,22.6,0.5,0.5);
+	this.instance_12 = new lib.CachedBmp_125();
+	this.instance_12.setTransform(27.65,13.6,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_12).wait(96));
+	this.timeline.addTween(cjs.Tween.get(this.instance_12).wait(98));
 
 	// background
-	this.instance_13 = new lib.young_driver();
+	this.instance_13 = new lib.young_driver_300x250();
 	this.instance_13.setTransform(1,1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_13).wait(96));
+	this.timeline.addTween(cjs.Tween.get(this.instance_13).wait(98));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(61,120.7,550.5,240);
+p.nominalBounds = new cjs.Rectangle(57.7,120.7,553.8,240);
 // library properties:
 lib.properties = {
 	id: 'B72D38DDA0BDC546945C240A290B9992',
@@ -379,8 +513,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Zenjob_banner_300x250_V1_atlas_.png?1584231744520", id:"Zenjob_banner_300x250_V1_atlas_"},
-		{src:"images/Zenjob_banner_300x250_V1_atlas_2.png?1584231744520", id:"Zenjob_banner_300x250_V1_atlas_2"}
+		{src:"images/Zenjob_banner_300x250_V1_atlas_.png?1584281904306", id:"Zenjob_banner_300x250_V1_atlas_"},
+		{src:"images/Zenjob_banner_300x250_V1_atlas_2.png?1584281904307", id:"Zenjob_banner_300x250_V1_atlas_2"}
 	],
 	preloads: []
 };
